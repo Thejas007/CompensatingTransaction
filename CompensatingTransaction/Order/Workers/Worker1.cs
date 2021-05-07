@@ -20,13 +20,13 @@
             {
                 IsSuccess = true,
                 OperationId = request.OperationId,
-                SubStatus = nameof(Worker1) + "Completed",
+                SubStatus = nameof(Worker1) + " Completed",
             });
         }
 
         public Task RollBack()
         {
-            Console.WriteLine("Rolling back" + nameof(Worker1));
+            Console.WriteLine("Rolling back " + nameof(Worker1));
 
             return Task.CompletedTask;
         }
